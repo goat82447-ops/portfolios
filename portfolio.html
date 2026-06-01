@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Krishna Kumar B - .NET Developer</title>
+  <style>
+    :root{--bg:#f6f7fb;--card:#fff;--muted:#6b7280;--accent:#0f172a;--accent-2:#0ea5a4;--line:rgba(15,23,42,0.07)}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial; margin:0;background:var(--bg);color:var(--accent);-webkit-font-smoothing:antialiased}
+    .wrap{max-width:920px;margin:28px auto;padding:28px}
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{width:96px;height:96px;border-radius:12px;background:linear-gradient(135deg,var(--accent-2),#0369a1);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:28px}
+    h1{margin:0;font-size:28px}
+    .muted{color:var(--muted)}
+    .card{background:var(--card);border:1px solid var(--line);padding:18px;border-radius:14px;margin-top:18px}
+    .two-col{display:grid;grid-template-columns:2fr 1fr;gap:18px}
+    section{margin-bottom:16px}
+    h2{margin:0 0 10px;font-size:20px}
+    ul{margin:8px 0 0 18px;color:var(--muted);padding-left:18px}
+    .chips{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:#eef2ff;color:#0f172a;padding:7px 11px;border-radius:999px;font-size:13px;border:1px solid rgba(30,41,59,0.08)}
+    .meta-right{text-align:right;font-size:14px;color:var(--muted)}
+    .project-title{display:block;width:100%;text-align:left;padding:10px 12px;margin:0;border:none;background:#e0f2fe;color:#0f172a;font-size:16px;font-weight:700;border-radius:10px;cursor:pointer;transition:background .2s}
+    .project-title:hover{background:#bae6fd}
+    .project-details{display:none;margin-top:12px;padding:14px;border:1px solid rgba(15,23,42,0.08);border-radius:12px;background:#f8fbff}
+    .project-details.visible{display:block}
+    .detail-heading{font-weight:700;margin-bottom:8px;color:#0f172a}
+    a.link{color:var(--accent-2);text-decoration:none;word-break:break-word}
+    footer{margin-top:22px;text-align:center;font-size:13px;color:var(--muted)}
+    @media (max-width:860px){.two-col{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="avatar">KB</div>
+      <div>
+        <h1>Krishna Kumar B</h1>
+        <div class="muted">.NET Developer � 7 yrs experience</div>
+        <div style="margin-top:8px" class="muted">Professional Objective: Looking for a challenging career in an organization that will provide an opportunity to apply my skills and experience for organizational advancement and my continued growth.</div>
+        <div style="margin-top:8px" class="muted">krishnaleo.b@gmail.com � +91-7731976124</div>
+        <div style="margin-top:4px"><a class="link" href="https://www.linkedin.com/in/krishna-bandoju-693453152?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">linkedin.com/in/krishna-bandoju-693453152</a></div>
+      </div>
+      <div class="meta-right">
+        <div><strong>7 yrs</strong></div>
+        <div style="margin-top:8px"><strong>Current:</strong> TCS (Client: Microsoft)</div>
+      </div>
+    </header>
+
+    <div class="card two-col">
+      <main>
+        <section>
+          <h2>Professional Summary</h2>
+          <ul>
+            <li>More than 7 years of IT experience in design, development, enhancement, maintenance and administration of web-based applications using ASP.NET, ASP.NET MVC, EF Core, LINQ, Web API, .NET Core, Azure, Git, TFS.</li>
+            <li>Experience in designing, scripting and performance tuning of Microsoft SQL Server.</li>
+            <li>Strong knowledge of OOPS concepts and proficiency in UI technologies: HTML, Angular, JavaScript, TypeScript, CSS.</li>
+            <li>Experience in bug resolution, optimized solution design, and mentoring teams (4-5 members).</li>
+            <li>Good interpersonal and analytical skills.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Experience</h2>
+
+          <div style="margin-bottom:14px">
+            <strong>TCS (Client: Microsoft)</strong>
+            <div class="muted">Dynamics 365 Omnichannel � Current</div>
+            <button type="button" class="project-title" onclick="toggleProject('proj-omnichannel')">Show Dynamics 365 Omnichannel key points</button>
+            <div id="proj-omnichannel" class="project-details">
+              <div class="detail-heading">Project key points</div>
+              <ul>
+                <li>Implemented Omnichannel engagement across web chat, social and SMS.</li>
+                <li>Configured routing, chatbot integration, knowledge base, and telemetry.</li>
+                <li>Handled CI/CD pipeline gating, PR validation checks, YAML pipelines, and e2e automation.</li>
+                <li>Delivered critical ICM-related features and deployment support.</li>
+              </ul>
+              <div class="detail-heading">Project structure</div>
+              <ul>
+                <li>Frontend: Dynamics 365 UI plus custom channel and routing configuration.</li>
+                <li>Backend: Azure Logic Apps, Web APIs, bot connectors, and telemetry ingestion.</li>
+                <li>Release: YAML pipelines, PR gating, validation checks, and automated deployments.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div style="margin-bottom:12px">
+            <strong>VSS Software Services Pvt Ltd (AmpleLogic) � Associate Software Engineer</strong>
+            <div class="muted">Client engagements & projects (selected):</div>
+
+            <div style="margin-top:8px">
+              <button type="button" class="project-title" onclick="toggleProject('proj-lowcode')">LowCode v3.0</button>
+              <div class="muted">Low-code / No-code platform to accelerate app delivery.</div>
+              <div id="proj-lowcode" class="project-details">
+                <div class="detail-heading">Project key points</div>
+                <ul>
+                  <li>Enabled drag-and-drop app creation with faster delivery and ROI.</li>
+                  <li>Designed DB modules, wrote complex SQL and Dynamic LINQ queries.</li>
+                  <li>Implemented Angular validation, Web API integration and performance tuning.</li>
+                </ul>
+                <div class="detail-heading">Project structure</div>
+                <ul>
+                  <li>UI: Angular and TypeScript front end.</li>
+                  <li>Backend: ASP.NET Core Web API and SQL Server.</li>
+                  <li>Release: GIT-based build and deployment pipelines.</li>
+                </ul>
+              </div>
+              <ul>
+                <li>Full SDLC involvement: development, testing and maintenance.</li>
+                <li>Mentored team, designed DB modules, wrote complex SQL & Dynamic LINQ queries.</li>
+                <li>Used Angular validations, performance optimization and Web-API development.</li>
+                <li>Technologies: C#, ASP.NET Core Web API, Angular, TypeScript, SQL Server, GIT.</li>
+                <li>Duration: OCT 2020 �  APR 2024/li>
+              </ul>
+            </div>
+
+            <div style="margin-top:10px">
+              <button type="button" class="project-title" onclick="toggleProject('proj-atwork')">At-Work</button>
+              <div class="muted">Employee information system: attendance, leaves, timesheets, action items, project tracking.</div>
+              <div id="proj-atwork" class="project-details">
+                <div class="detail-heading">Project key points</div>
+                <ul>
+                  <li>Tracked attendance, leaves, timesheets, action items and project reviews.</li>
+                  <li>Implemented client-side validations, reporting and resource utilization tracking.</li>
+                  <li>Managed code reviews, GIT commits and maintenance tasks.</li>
+                </ul>
+                <div class="detail-heading">Project structure</div>
+                <ul>
+                  <li>UI: ASP.NET MVC, Angular, TypeScript.</li>
+                  <li>Data: SQL Server tables and LINQ-based access.</li>
+                  <li>Integration: Web API and reporting modules.</li>
+                </ul>
+              </div>
+              <ul>
+                <li>Implemented UI & client validations using TypeScript/Angular, developed SQL tables and LINQ queries.</li>
+                <li>Managed code reviews, GIT commits, reporting and maintenance tasks.</li>
+                <li>Technologies: C#, ASP.NET MVC, Angular, TypeScript, SQL Server, GIT.</li>
+                <li>Duration: Mar 2022 � Mar 2023</li>
+              </ul>
+            </div>
+
+            <div style="margin-top:10px">
+              <button type="button" class="project-title" onclick="toggleProject('proj-elms')">Electronic Learning Management System (eLMS)</button>
+              <div class="muted">Enterprise LMS with approval workflows, scheduling and reporting.</div>
+              <div id="proj-elms" class="project-details">
+                <div class="detail-heading">Project key points</div>
+                <ul>
+                  <li>Managed training material, approval workflow and session scheduling.</li>
+                  <li>Built role-based record tracking, statuses, and reports.</li>
+                </ul>
+                <div class="detail-heading">Project structure</div>
+                <ul>
+                  <li>UI: ASP.NET MVC, Angular, TypeScript.</li>
+                  <li>Backend: Web API, SQL Server.</li>
+                  <li>Workflow: approval process and status management.</li>
+                </ul>
+              </div>
+              <ul>
+                <li>Full SDLC: UI design, DB design, LINQ usage, reports and maintenance.</li>
+                <li>Technologies: C#, ASP.NET MVC, Angular, TypeScript, SQL Server, GIT.</li>
+                <li>Duration: SEP 2019 � SEP 2020</li>
+              </ul>
+            </div>
+
+            <div style="margin-top:10px">
+              <button type="button" class="project-title" onclick="toggleProject('proj-hrbenefits')">Shell Infotech (C2H Deloitte) � HR-Benefits</button>
+              <div class="muted">HR-Benefits project during a 6-month contract after AmpleLogic engagement.</div>
+              <div id="proj-hrbenefits" class="project-details">
+                <div class="detail-heading">Project key points</div>
+                <ul>
+                  <li>Delivered HR benefits enrollment, eligibility and policy management enhancements.</li>
+                  <li>Integrated payroll workflows and approval logic.</li>
+                  <li>Provided validation checks, reporting and deployment support.</li>
+                </ul>
+                <div class="detail-heading">Project structure</div>
+                <ul>
+                  <li>UI/workflow: benefits processing and approval pages.</li>
+                  <li>Backend: Web APIs, SQL Server integration, payroll sync.</li>
+                  <li>Support: validation automation, reporting and release support.</li>
+                </ul>
+              </div>
+              <ul>
+                <li>Delivered HR benefits enrollment and policy-management enhancements.</li>
+                <li>Integrated benefits workflows with payroll systems and approval processes.</li>
+                <li>Worked on validation, reporting, and end-to-end deployment support.</li>
+                <li>Duration: 6 months</li>
+              </ul>
+            </div>
+
+            <div style="margin-top:10px">
+              <button type="button" class="project-title" onclick="toggleProject('proj-edms')">e-DMS (Document Management)</button>
+              <div class="muted">Document capture, organization, retrieval and control workflows.</div>
+              <div id="proj-edms" class="project-details">
+                <div class="detail-heading">Project key points</div>
+                <ul>
+                  <li>Managed document capture, retrieval, approval routing and control.</li>
+                  <li>Enabled secure electronic document workflows.</li>
+                </ul>
+                <div class="detail-heading">Project structure</div>
+                <ul>
+                  <li>UI: document management and workflow interfaces.</li>
+                  <li>Backend: storage, retrieval and approval APIs.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Technical Highlights</h2>
+          <ul>
+            <li>CI/CD: YAML pipelines, pipeline gating, end-to-end pipeline handling</li>
+            <li>Azure Logic Apps, Web API integrations</li>
+            <li>BDD (test automation), PR validation checks</li>
+            <li>EF Core, LINQ, SQL Server performance tuning</li>
+            <li>Angular, TypeScript, JavaScript, HTML, CSS</li>
+            <li>GIT, TFS, code reviews and mentoring</li>
+            <li>Critical ICM handling and incident-driven feature delivery</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Education</h2>
+          <div class="muted">Bachelor of Technology in Electronics and Communication Engineering � Jyothishmathi Institute of Technology and Management (JNTUH)</div>
+          <div class="muted">Aggregate: 63.54%</div>
+        </section>
+      </main>
+
+      <aside>
+        <section class="card" style="padding:14px">
+          <h2>Skills</h2>
+          <div class="chips" style="margin-top:8px">
+            <div class="chip">C#</div>
+            <div class="chip">ASP.NET / MVC</div>
+            <div class="chip">ASP.NET Core</div>
+            <div class="chip">EF Core</div>
+            <div class="chip">Web API</div>
+            <div class="chip">Angular</div>
+            <div class="chip">TypeScript</div>
+            <div class="chip">JavaScript</div>
+            <div class="chip">HTML</div>
+            <div class="chip">CSS</div>
+            <div class="chip">SQL Server</div>
+            <div class="chip">Azure Logic Apps</div>
+            <div class="chip">CI/CD</div>
+            <div class="chip">YAML Pipelines</div>
+            <div class="chip">BDD</div>
+            <div class="chip">Unit Testing</div>
+            <div class="chip">Jenkins</div>
+            <div class="chip">Docker</div>
+            <div class="chip">Kubernetes</div>
+            <div class="chip">PR Validation</div>
+            <div class="chip">GIT / TFS</div>
+          </div>
+        </section>
+
+        <section class="card" style="padding:14px;margin-top:12px">
+          <h2>Personal Details</h2>
+          <div class="muted">Date of Birth: 06 April 1997</div>
+          <div class="muted" style="margin-top:6px">Address: Near Ayyappa Society, Madhapur, Hyderabad, Telangana � 500072</div>
+          <div style="margin-top:6px" class="muted">Contact: +91-7731976124</div>
+          <div style="margin-top:6px" class="muted">Email: krishnaleo.b@gmail.com</div>
+        </section>
+
+        <section style="margin-top:12px;padding:14px" class="card">
+          <h2>Tools / IDE</h2>
+          <div class="muted">Visual Studio 2013 / 2019 / 2022, SQL Server Management Studio, Postman</div>
+        </section>
+      </aside>
+    </div>
+
+    <footer>
+      Resume generated from provided details. Edit the file to adjust wording, add exact role titles, or update dates.
+    </footer>
+  </div>
+  <script>
+    function toggleProject(id) {
+      var el = document.getElementById(id);
+      if (el) { el.classList.toggle('visible'); }
+    }
+  </script>
+</body>
+</html>
